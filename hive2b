@@ -1,0 +1,49 @@
+2b.
+select year, worksite, count(*) as n from h1b_final where year=2011 and case_status='CERTIFIED' group by  year, worksite order by n desc limit 5;
+2011	NEW YORK, NEW YORK	23172
+2011	HOUSTON, TEXAS	8184
+2011	CHICAGO, ILLINOIS	5188
+2011	SAN JOSE, CALIFORNIA	4713
+2011	SAN FRANCISCO, CALIFORNIA	4711
+Time taken: 65.523 seconds, Fetched: 5 row(s)
+
+select year, worksite, count(*) as n from h1b_final where year=2012 and case_status='CERTIFIED' group by  year, worksite order by n desc limit 5;
+2012	NEW YORK, NEW YORK	23737
+2012	HOUSTON, TEXAS	9963
+2012	SAN FRANCISCO, CALIFORNIA	6116
+2012	CHICAGO, ILLINOIS	5671
+2012	ATLANTA, GEORGIA	5565
+Time taken: 72.365 seconds, Fetched: 5 row(s)
+
+select year, worksite, count(*) as n from h1b_final where year=2013 and case_status='CERTIFIED' group by  year, worksite order by n desc limit 5;
+2013	NEW YORK, NEW YORK	23537
+2013	HOUSTON, TEXAS	11136
+2013	SAN FRANCISCO, CALIFORNIA	7281
+2013	SAN JOSE, CALIFORNIA	6722
+2013	ATLANTA, GEORGIA	6377
+Time taken: 69.424 seconds, Fetched: 5 row(s)
+
+select year, worksite, count(*) as n from h1b_final where year=2014 and case_status='CERTIFIED' group by  year, worksite order by n desc limit 5;
+2014	NEW YORK, NEW YORK	27634
+2014	HOUSTON, TEXAS	13360
+2014	SAN FRANCISCO, CALIFORNIA	9798
+2014	SAN JOSE, CALIFORNIA	8223
+2014	ATLANTA, GEORGIA	8213
+Time taken: 64.041 seconds, Fetched: 5 row(s)
+
+select year, worksite, count(*) as n from h1b_final where year=2015 and case_status='CERTIFIED' group by  year, worksite order by n desc limit 5;
+2015	NEW YORK, NEW YORK	31266
+2015	HOUSTON, TEXAS	15242
+2015	SAN FRANCISCO, CALIFORNIA	12594
+2015	ATLANTA, GEORGIA	10500
+2015	SAN JOSE, CALIFORNIA	9589
+Time taken: 66.323 seconds, Fetched: 5 row(s)
+
+select year, worksite, count(*) as n from h1b_final where year=2016 and case_status='CERTIFIED' group by  year, worksite order by n desc limit 5;
+2016	NEW YORK, NEW YORK	34639
+2016	SAN FRANCISCO, CALIFORNIA	13836
+2016	HOUSTON, TEXAS	13655
+2016	ATLANTA, GEORGIA	11678
+2016	CHICAGO, ILLINOIS	11064
+Time taken: 66.269 seconds, Fetched: 5 row(s)
+
